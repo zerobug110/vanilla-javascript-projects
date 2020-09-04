@@ -1,4 +1,6 @@
 // Map  filter and reduce
+
+/** 
 var map = [1,2,3,4,5,6,7,8,9,10,11,12].map(function(n) {
     return n *2;
 });
@@ -11,6 +13,8 @@ var three = [1,2,3,4,5,6,7,8,9,10,11,12].map(function(number) {
 });
 
 console.log(three);
+
+*/
 
 // Arrow functions 
 /** function sum(a, b) {
@@ -78,7 +82,6 @@ function isFullyAge6(... years) {
 
  isFullyAge6(1990, 1999,1965,1942, 1984, 1982 ,2000);
 
- */
 
 //map
 
@@ -97,14 +100,66 @@ console.log(emily);
 
 
 
+const question = new Map();
+question.set('what is your official name of the latest javascript version');
+question.set(1,'es5');
+question.set(2,'es6');
+question.set(3, 'es2015');
+question.set(4,'es2016');
+question.set('correct',3);
+question.set(true,'correct answer:D');
+question.set(false, 'wrong answer please try again')
+
+console.log(question.get('question'))
+console.log(question.size);
+
+//delete 
+if (question.has(4)) {
+    question.delete(4);
+}
+
+//to clear 
+question.clear();
+
+//loop through the map
+
+question.forEach((value, key) => console.log(`this is ${key}, and its ser to ${value}`));
 
 
+ */
+
+//class
+//es5 
+var Person = function(name,yearOfBirth,job) {
+    this.name = name;
+    this.yearOfBirth = yearOfBirth;
+    this.job = job;
+}
+
+Person.prototype.calculateAge = function() {
+    var age = new Date().getFullYear -this.yearOfBirth;
+    console.log(age);
+}
+
+var john5 = new Person('John', 1990, 'teacher');
+console.log(john5)
 
 
+//es6
+class Person6 {
+    constructor(name, yearOfBirth, job) {
+        this.name = name;
+        this.yearOfBirth = yearOfBirth;
+        this.job = job;
+    }
 
+    calculateAge() {
+        let age = new Date().getFullYear - this.yearOfBirth;
+        console.log(age);
+    }
+}
 
-
-
+const john6 = new Person6('john',1990,'teacher');
 
 
 
