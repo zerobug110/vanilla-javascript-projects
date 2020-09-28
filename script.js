@@ -130,36 +130,94 @@ question.forEach((value, key) => console.log(`this is ${key}, and its ser to ${v
 
 //class
 //es5 
-var Person = function(name,yearOfBirth,job) {
-    this.name = name;
-    this.yearOfBirth = yearOfBirth;
-    this.job = job;
-}
+// var Person = function(name,yearOfBirth,job) {
+//     this.name = name;
+//     this.yearOfBirth = yearOfBirth;
+//     this.job = job;
+// }
 
-Person.prototype.calculateAge = function() {
-    var age = new Date().getFullYear -this.yearOfBirth;
-    console.log(age);
-}
+// Person.prototype.calculateAge = function() {
+//     var age = new Date().getFullYear -this.yearOfBirth;
+//     console.log(age);
+// }
 
-var john5 = new Person('John', 1990, 'teacher');
-console.log(john5)
+// var john5 = new Person('John', 1990, 'teacher');
+// console.log(john5)
 
 
-//es6
-class Person6 {
-    constructor(name, yearOfBirth, job) {
-        this.name = name;
-        this.yearOfBirth = yearOfBirth;
-        this.job = job;
-    }
+// //es6
 
-    calculateAge() {
-        let age = new Date().getFullYear - this.yearOfBirth;
-        console.log(age);
-    }
-}
+// class Person6 {
+//     constructor(name, yearOfBirth, job) {
+//         this.name = name;
+//         this.yearOfBirth = yearOfBirth;
+//         this.job =job;
+//     }
 
-const john6 = new Person6('john',1990,'teacher');
+//     calculateAge() {
+//         let age = new Date().getFullYear - this.yearOfBirth;
+//         console.log(age);
+//     }
+// }
+
+// const john6 = new Person6 ('john',1990,'teacher');
+// console.log(Person6.joh);
+
+//map filter  reduce foreach and sort
+
+const companies = [
+    {name: 'company one', category: 'finance', start: 1990, end: 2000},
+    {name: 'company two', category: 'retail', start: 1999, end: 2004},
+    {name: 'company three', category: 'auto', start: 1998, end: 2010},
+    {name: 'company four', category: 'technology', start: 1993, end: 2006},
+    {name: 'company five', category: 'retail', start: 1980, end: 1999},
+    
+]
+
+// z
+
+companies.forEach((company)=> {
+    console.log(company.name)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
