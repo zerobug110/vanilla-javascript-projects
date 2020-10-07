@@ -165,20 +165,67 @@ question.forEach((value, key) => console.log(`this is ${key}, and its ser to ${v
 
 //map filter  reduce foreach and sort
 
-const companies = [
-    {name: 'company one', category: 'finance', start: 1990, end: 2000},
-    {name: 'company two', category: 'retail', start: 1999, end: 2004},
-    {name: 'company three', category: 'auto', start: 1998, end: 2010},
-    {name: 'company four', category: 'technology', start: 1993, end: 2006},
-    {name: 'company five', category: 'retail', start: 1980, end: 1999},
+// const companies = [
+//     {name: 'company one', category: 'finance', start: 1990, end: 2000},
+//     {name: 'company two', category: 'retail', start: 1999, end: 2004},
+//     {name: 'company three', category: 'auto', start: 1998, end: 2010},
+//     {name: 'company four', category: 'technology', start: 1993, end: 2006},
+//     {name: 'company five', category: 'retail', start: 1980, end: 1999},
     
-]
+// ]
 
-// z
+// // z
 
-companies.forEach((company)=> {
-    console.log(company.name)
-})
+// companies.forEach((company)=> {
+//     console.log(company.name)
+// })
+
+
+// SPREAD OPERATORS
+const arrOne = ['Maria', 'Anna', 'muhammed', 'Lamin'];
+const arrTwo = ['Omar', 'Isamil', 'Aisha'];
+
+const concatArr = [...arrOne, ...arrTwo];
+
+concatArr.forEach(function(name){
+    console.log(name);
+});
+
+
+const mariam = 'mariam';
+const nameToArr = [...mariam];
+nameToArr.forEach(function(lady) {
+    console.log(lady);
+});
+
+
+const addNumber = function(a,b,c,) {
+    return a + b + c;
+}
+
+
+const numbers = [12, 25, 34];
+const addition = addNumber(...numbers);
+console.log(addition);
+
+console.log('*************ARSENAL***********');
+
+const arsenal = ['leno', 'gabril', 'holden', 'tirney', 'hector', 'partey', 'xhaka', 'ozil', 'auba', 'pepe', 'laca'];
+
+const player = arsenal.forEach(function(name){
+    console.log(name)
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
