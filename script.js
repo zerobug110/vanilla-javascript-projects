@@ -218,6 +218,32 @@ const player = arsenal.forEach(function(name){
 
 
 
+const work = ['lamin', 'muhammed', 'dealer'];
+const position = ['deverloper', 'devop', 'designer'];
+
+const join = [...work, ...position];
+
+join.forEach(function(join) {
+    console.log(join);
+});
+
+
+const plus = function(n1, n2, n3) {
+    return n1 + n2 + n3;
+}
+
+const add = [30, 23, 43];
+
+const additions = plus(...add);
+console.log(additions); 
+
+
+
+
+
+
+
+
 
 
 
