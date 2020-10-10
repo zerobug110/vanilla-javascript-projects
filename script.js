@@ -182,77 +182,108 @@ question.forEach((value, key) => console.log(`this is ${key}, and its ser to ${v
 
 
 // SPREAD OPERATORS
-const arrOne = ['Maria', 'Anna', 'muhammed', 'Lamin'];
-const arrTwo = ['Omar', 'Isamil', 'Aisha'];
+// const arrOne = ['Maria', 'Anna', 'muhammed', 'Lamin'];
+// const arrTwo = ['Omar', 'Isamil', 'Aisha'];
 
-const concatArr = [...arrOne, ...arrTwo];
+// const concatArr = [...arrOne, ...arrTwo];
 
-concatArr.forEach(function(name){
-    console.log(name);
-});
-
-
-const mariam = 'mariam';
-const nameToArr = [...mariam];
-nameToArr.forEach(function(lady) {
-    console.log(lady);
-});
+// concatArr.forEach(function(name){
+//     console.log(name);
+// });
 
 
-const addNumber = function(a,b,c,) {
-    return a + b + c;
-}
+// const mariam = 'mariam';
+// const nameToArr = [...mariam];
+// nameToArr.forEach(function(lady) {
+//     console.log(lady);
+// });
 
 
-const numbers = [12, 25, 34];
-const addition = addNumber(...numbers);
-console.log(addition);
-
-console.log('*************ARSENAL***********');
-
-const arsenal = ['leno', 'gabril', 'holden', 'tirney', 'hector', 'partey', 'xhaka', 'ozil', 'auba', 'pepe', 'laca'];
-
-const player = arsenal.forEach(function(name){
-    console.log(name)
-});
+// const addNumber = function(a,b,c,) {
+//     return a + b + c;
+// }
 
 
+// const numbers = [12, 25, 34];
+// const addition = addNumber(...numbers);
+// console.log(addition);
 
-const work = ['lamin', 'muhammed', 'dealer'];
-const position = ['deverloper', 'devop', 'designer'];
+// console.log('*************ARSENAL***********');
 
-const join = [...work, ...position];
+// const arsenal = ['leno', 'gabril', 'holden', 'tirney', 'hector', 'partey', 'xhaka', 'ozil', 'auba', 'pepe', 'laca'];
 
-join.forEach(function(join) {
-    console.log(join);
-});
-
-
-const plus = function(n1, n2, n3) {
-    return n1 + n2 + n3;
-}
-
-const add = [30, 23, 43];
-
-const additions = plus(...add);
-console.log(additions); 
+// const player = arsenal.forEach(function(name){
+//     console.log(name)
+// });
 
 
 
+// const work = ['lamin', 'muhammed', 'dealer'];
+// const position = ['deverloper', 'devop', 'designer'];
+
+// const join = [...work, ...position];
+
+// join.forEach(function(join) {
+//     console.log(join);
+// });
+
+
+// const plus = function(n1, n2, n3) {
+//     return n1 + n2 + n3;
+// }
+
+// const add = [30, 23, 43];
+
+// const additions = plus(...add);
+// console.log(additions); 
 
 
 
+// const address = {
+//     country: 'usa',
+//     state: 'ohio',
+//     postCode: 'LA2282'
+// };
+
+// const name = {
+//     firstName: 'muhammed',
+//     lastName: 'bojang'
+// };
+
+// const person = {...address, ...name};
+
+// console.log(JSON.stringify(person, null, 2));
+// // console.log(person)
+
+// //ARROW FUNCTIONS 
+// const hello = () => {
+//     const es6 ='ES6';
+//     return `Hello ${es6}`;
+// };
+
+// const powers = [1,2,3,4,5].map((number, index) => Math.pow(number, index));
+
+// const add = (n1, n2) => n1+ n2;
+
+// const milesToKm = (miles) => miles * 1.60934;
+
+// console.log(hello())
+// console.log(powers);
+// console.log(add(100,100));
+// console.log(milesToKm(100));
 
 
+//LEXICAL THIS
 
+const person = {
+    name: 'alex',
+    cars: ['ferrari','lambo'],
+    toString: function() {
+        console.log(`${this.name} has a ${this.cars}`);
+    }
+};
 
-
-
-
-
-
-
-
+person.toString();
 
 
 
