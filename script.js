@@ -275,24 +275,72 @@ question.forEach((value, key) => console.log(`this is ${key}, and its ser to ${v
 
 //LEXICAL THIS
 
-const person = {
-    name: 'alex',
-    cars: ['ferrari','lambo'],
-    toString: function() {
-        console.log(`${this.name} has a ${this.cars}`);
-    }
+// const person = {
+//     name: 'alex',
+//     cars: ['ferrari','lambo'],
+//     toString: function() {
+//         console.log(`${this.name} has a ${this.cars}`);
+//     }
+// };
+
+// person.toString();
+
+// OOP CRASH COURSE BY TRAVERSEY MEDIA
+
+//Object Literal
+
+// const book1 = {
+//     title: 'book one',
+//     author: 'john done',
+//     year: ' 2014',
+//     getSummary: function() {
+//         return `${this.title} was written by ${this.author} in ${this.year}`;
+//     }
+// };
+
+// console.log(book1.getSummary());
+
+//CONSTRUCTOR 
+
+// function Book(title, author, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.year = year;
+//     this.getSummary = function() {
+//         return `${this.title} was written by ${author} in ${this.year}`
+//     }
+// }
+
+
+// //Instantiate an  object
+
+// const book1 = new Book('book1', ' john doe','2020');
+// const book2 = new Book('book2','jake',' 2017');
+
+// console.log(book1.getSummary());
+
+
+//CONSTRUCTOR
+function Book(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
 };
 
-person.toString();
+
+//get summary
+
+Book.prototype.getSummary = function() {
+    return `${this.title} was written by ${this.author} in ${this.year}`
+};
 
 
+//Instantiate an  object
 
+const book1 = new Book('book1', ' john doe','2020');
+const book2 = new Book('book2','muhammed',' 2017');
 
-
-
-
-
-
+console.log(book1.getSummary());
 
 
 
