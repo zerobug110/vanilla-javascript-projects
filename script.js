@@ -285,7 +285,7 @@ question.forEach((value, key) => console.log(`this is ${key}, and its ser to ${v
 
 // person.toString();
 
-// OOP CRASH COURSE BY TRAVERSEY MEDIA
+// **************************************** OOP CRASH COURSE BY TRAVERSEY MEDIA *******************************************
 
 //Object Literal
 
@@ -340,49 +340,59 @@ Book.prototype.getSummary = function() {
 const book1 = new Book('book1', ' john doe','2020');
 const book2 = new Book('book2','muhammed',' 2017');
 
-console.log(book1.getSummary());
+//console.log(book1.getSummary());
 
 
 
+const Player = function(name,role, dateOfBirth,marketValue) {
+    this.name = name;
+    this.role = role;
+    this.dateOfBirth = dateOfBirth;
+    this.marketValue = marketValue;
+}
+
+Player.prototype.ages = function() {
+    return 2020 - this.dateOfBirth;
+
+}
+
+const lamin = new Player('lamin','midfielder',1997, '50 million');
+const muhammed = new Player('muhammed','midfielder',2000, '180 million');
+const ebrima = new Player('ebriam','striker',2004, '89 million');
+const omar = new Player('omar','defender',1997, '50 million');
+
+console.log(lamin);
+console.log(ebrima);
+console.log(muhammed);
+console.log(omar);
+
+
+const Car = function (carName, carYear, carPrice) {
+    this.carName = carName;
+    this.carPrice = carPrice;
+    this.carYear = carYear;
+};
 
 
 
+Car.prototype.carOld = function(){
+    return 2020 - this.carYear;
+} 
+
+const bmw = new Car('bmw',2000,2001);
+
+console.log(bmw.carOld());
 
 
 
+const Client = function(name, amount) {
+    this.name = name;
+    this.amount = amount;
+};
 
+const person1 = new Client('muhammed ceesay','3000');
+const person2 = new Client('fatou sarr','6000');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(person1);
+console.log(person2);
 
